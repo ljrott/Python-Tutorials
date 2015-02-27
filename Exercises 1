@@ -1,0 +1,23 @@
+## Calculate the number of minutes in a week
+minutes_in_week = 60*24*7
+
+## Calculate a remainder without useing mod (%)
+remainder_without_mod = 2304811 - (2304811 // 47 * 47)
+
+## Return whether a number is divisible by three
+divisible_by_3 = (673 + 909) / 3 == type(int)
+
+## Create a conditional expression
+x = -9
+y = 1/2
+expression_val = 2 ** (y+1/2) if x+10 < 0 else 2 ** (y-1/2)
+
+## Set comprehension - square the values in set {1,2,3,4,5}
+first_five_squares = { x**2 for x in {1,2,3,4,5} }
+
+## Set comprehension - find the first five powers of two
+first_five_pows_two = { 2**x for x in {0,1,2,3,4} }
+
+## Double comprehension - assign two three element sets so that they evaluate to a nine-element set
+X1 = { 1, 2, 3 }
+Y1 = { 5, 6, 7 }
