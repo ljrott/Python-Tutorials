@@ -21,3 +21,15 @@ first_five_pows_two = { 2**x for x in {0,1,2,3,4} }
 ## Double comprehension - assign two three element sets so that they evaluate to a nine-element set
 X1 = { 1, 2, 3 }
 Y1 = { 5, 6, 7 }
+
+## Double comprehension evaluating to five-element set
+## Assign disjoint three-element sets to X1 and Y1 so that
+# {x*y for x in X1 for y in Y1} evaluates to a five-element set.
+X2 = { 0.5, 1, 2 }
+Y2 = { 0, -1, -0.5 }
+
+## Set intersection as a comprehension, given:
+S = {1, 2, 3, 4}
+T = {3, 4, 5, 6}
+# Write a one-line set comprehension that evaluates to the intersection of S and T
+S_intersect_T = { x for x in S if x in T }
