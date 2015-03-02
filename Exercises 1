@@ -33,3 +33,31 @@ S = {1, 2, 3, 4}
 T = {3, 4, 5, 6}
 # Write a one-line set comprehension that evaluates to the intersection of S and T
 S_intersect_T = { x for x in S if x in T }
+
+## Write a one line expression that evaluates to the average of a list of numbers
+list_of_numbers = [20, 10, 15, 75]
+list_average = sum(list_of_numbers)/ / len(list_of_numbers)
+
+## Cartesian-product comprehension
+cartesian_product = [(x,y) for x in ['A','B','C'] for y in [1,2,3]]
+
+## Find the sum of all numbers in list of list of numbers
+LofL = [[.25, .75, .1], [-1, 0], [4, 4, 4, 4]]
+LofL_sum = sum([sum(x) for x in LofL])
+
+## Find the list of all three element tuples summing to zero
+S = {-4, -2, 1, 2, 5, 0}
+exclude_zero_list = [(i,j,k) for i in S for j in S for k in S if i+j+k == 0]
+
+## Find the list of all three-element tuples summing to zero, excluding one with all zeroes
+S = {-4, -2, 1, 2, 5, 0}
+exclude_zero_list = [(i,j,k) for i in S for j in S for k in S if i+j+k == 0 and (i,j,k) != (0,0,0)][0]
+
+
+
+
+
+
+
+
+
