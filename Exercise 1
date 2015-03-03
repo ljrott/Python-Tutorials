@@ -51,13 +51,31 @@ exclude_zero_list = [(i,j,k) for i in S for j in S for k in S if i+j+k == 0]
 
 ## Find the list of all three-element tuples summing to zero, excluding one with all zeroes
 S = {-4, -2, 1, 2, 5, 0}
-exclude_zero_list = [(i,j,k) for i in S for j in S for k in S if i+j+k == 0 and (i,j,k) != (0,0,0)][0]
+exclude_zero_list = [(i,j,k) for i in S for j in S for k in S if i+j+k == 0 and (i,j,k) != (0,0,0)]
 
+## Using list S, 
+S = {-4, -2, 1, 2, 5, 0}
+first_of_tuples_list = [(i,j,k) for i in S for j in S for k in S if i+j+k == 0 and (i,j,k) != (0,0,0)][0]
 
+## List and set differences - assign to example_L a list such that len(example_L) != len(list(set(example_L)))
+example_L = [0,0,1]
 
+## Odd numbers - write a comprehension that returns all odd numbers from 0-100
+odd_num_list_range = {x for x in range(100) if x%2 != 0}
 
+## Using range and zip 
+L = ['A','B','C','D','E']
+range_and_zip = list(zip(range(5), L))
 
+## With lists A and B, write a comprehension where the ith element is the ith element of A plus the ith element of B
+A = [10, 25, 40]
+B = [1, 15, 20]
+list_sum_zip = [x+y for (x,y) in zip(A,B)]
 
+## Find next integers in a list
+L = [1, 2, 3]
+def nextInts(L): return [x+1 for x in L]
 
-
-
+## Find cubes of the elements in a list
+L = [1, 2, 3]
+def cubes(L): return [ x**3 for x in L]
